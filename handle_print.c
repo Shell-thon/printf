@@ -9,22 +9,47 @@
  * @width: get width.
  * @precision: Precision specification
  * @size: Size specifier
+<<<<<<< HEAD
  * Return: 1 or 2;
  */
 int handle_print(const char *fmt, int *ind, va_list list, char buffer[],
+=======
+ *
+ * Return: 1 or 2;
+ */
+
+int handle_print(const char *fmt, int *ind, va_list list, char
+buffer[],
+>>>>>>> d9c3a55afc9437118ff36aab0b570224cd48cf74
 	int flags, int width, int precision, int size)
 {
 	int i, unknow_len = 0, printed_chars = -1;
 	fmt_t fmt_types[] = {
+<<<<<<< HEAD
 		{'c', print_char}, {'s', print_string}, {'%', print_percent},
 		{'i', print_int}, {'d', print_int}, {'b', print_binary},
 		{'u', print_unsigned}, {'o', print_octal}, {'x', print_hexadecimal},
 		{'X', print_hexa_upper}, {'p', print_pointer}, {'S', print_non_printable},
+=======
+
+		{'c', print_char}, {'s', print_string}, {'%',
+	print_percent},
+		{'i', print_int}, {'d', print_int}, {'b', print_binary},
+		{'u', print_unsigned}, {'o', print_octal}, {'x',
+	 print_hexadecimal},
+		{'X', print_hexa_upper}, {'p', print_pointer}, {'S',
+	print_non_printable},
+>>>>>>> d9c3a55afc9437118ff36aab0b570224cd48cf74
 		{'r', print_reverse}, {'R', print_rot13string}, {'\0', NULL}
 	};
 	for (i = 0; fmt_types[i].fmt != '\0'; i++)
 		if (fmt[*ind] == fmt_types[i].fmt)
+<<<<<<< HEAD
 			return (fmt_types[i].fn(list, buffer, flags, width, precision, size));
+=======
+			return (fmt_types[i].fn(list, buffer, flags, width,
+	precision, size));
+>>>>>>> d9c3a55afc9437118ff36aab0b570224cd48cf74
 
 	if (fmt_types[i].fmt == '\0')
 	{
@@ -39,6 +64,7 @@ int handle_print(const char *fmt, int *ind, va_list list, char buffer[],
 			while (fmt[*ind] != ' ' && fmt[*ind] != '%')
 				--(*ind);
 			if (fmt[*ind] == ' ')
+<<<<<<< HEAD
 				--(*ind);
 			return (1);
 		}
@@ -46,4 +72,14 @@ int handle_print(const char *fmt, int *ind, va_list list, char buffer[],
 		return (unknow_len);
 	}
 	return (printed_chars);
+=======
+				--(*ind)
+			return (1);
+		}
+		unknow_len += write(1, &fmt[*ind], 1);
+
+			return (unknow_len);
+	}
+	return (printed_chars)
+>>>>>>> d9c3a55afc9437118ff36aab0b570224cd48cf74
 }

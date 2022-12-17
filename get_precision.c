@@ -8,6 +8,10 @@
  *
  * Return: Precision.
  */
+<<<<<<< HEAD
+=======
+
+>>>>>>> d9c3a55afc9437118ff36aab0b570224cd48cf74
 int get_precision(const char *format, int *i, va_list list)
 {
 	int curr_i = *i + 1;
@@ -29,6 +33,10 @@ int get_precision(const char *format, int *i, va_list list)
 		{
 			curr_i++;
 			precision = va_arg(list, int);
+<<<<<<< HEAD
+=======
+
+>>>>>>> d9c3a55afc9437118ff36aab0b570224cd48cf74
 			break;
 		}
 		else
