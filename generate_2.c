@@ -1,4 +1,4 @@
-#include "holberton.h"
+#include "main.h"
 
 /**
  * gen_x - Generates an hexadecimal conversion written to a string in lowercase

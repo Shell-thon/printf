@@ -1,4 +1,4 @@
-#include "holberton.h"
+#include "main.h"
 /**
  * gen_c - Generates a character written to a string
  * @pattern: Pattern to follow to print the character

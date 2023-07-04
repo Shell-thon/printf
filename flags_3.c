@@ -1,4 +1,4 @@
-#include "holberton.h"
+#include "main.h"
 /**
  * app_hash - Applies the hash flag to the buffer
  * @pattern: Pattern to follow

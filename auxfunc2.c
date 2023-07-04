@@ -1,4 +1,4 @@
-#include "holberton.h"
+#include "main.h"
 
 /**
  * hexS - Makes hexadecimal conversion for non printable characters

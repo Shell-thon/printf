@@ -1,4 +1,4 @@
-#include "holberton.h"
+#include "main.h"
 
 /**
  * gen_r - Generates a reversed string written to a buffer

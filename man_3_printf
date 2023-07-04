@@ -1,4 +1,4 @@
-.TH _PRINTF 3 "October 2019" "Holberton School" "Linux Programmers Manual"
+.TH _PRINTF 3 "December 2022" "Holberton School" "Linux Programmers Manual"
 .SH NAME
 _printf - formatted output conversion with number of bytes printed as return
 .SH SYNOPSIS

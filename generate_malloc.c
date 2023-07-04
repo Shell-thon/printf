@@ -1,4 +1,4 @@
-#include "holberton.h"
+#include "main.h"
 /**
  * generate_malloc - calls function that creates malloc with written specifier
  *
