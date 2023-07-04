@@ -32,9 +32,4 @@
 
 - There should be one project repository per group. The other members do not fork or clone the project to ensure only one of the team has the repository in their github account otherwise you risk scoring 0%
 
-<<<<<<< HEAD
-# AUTHORS: ADEJARE MICHAEL | ADEKING ADETUNDE
-=======
-# AUTHORS
-Adejare Michael & Adetunde AdeKing
->>>>>>> d9c3a55afc9437118ff36aab0b570224cd48cf74
+# AUTHORS: ADEJARE MICHAEL
